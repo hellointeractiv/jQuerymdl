@@ -56,7 +56,7 @@ Simple modal fullscreen - Config by datas
 ```
 
 ```javascript
-$('.btns-modal').mdl(this);
+$('.btns-modal').mdl();
 ```
 
 
