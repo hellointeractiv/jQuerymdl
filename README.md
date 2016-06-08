@@ -1,5 +1,6 @@
 # mdl
 Flexible modal, confirm &amp; prompt jquery plugin.
+Demo : http://hello-interactiv.com/utils/mdl/index.html
 
 ## Install 
 ```html
