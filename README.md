@@ -2,30 +2,25 @@
 Flexible modal, confirm &amp; prompt jquery plugin.
 
 ## Install 
-```
+```html
 <link rel="stylesheet" href="dist/mdl.css" >
-
 <script src="demo/libs/jquery.min.js"></script>
 <script src="dist/mdl-min.js"></script>
 ```
 
 ## Config by js
-```
+```html
 <a class="mdl-btn" id="bt1" data-target="#modal1" >
 modal by js
 </a>
+```
 
-			
-			
-<script type="text/javascript">
-
-			$('#bt1').mdl({
-				type: 'modal',
-				fullscreen:false,
-				overlayClick:true
-			});
-			
-</script>
+```javascript
+$('#bt1').mdl({
+	type: 'modal',
+	fullscreen:false,
+	overlayClick:true
+});
 ```
 
 ##Config by datas
@@ -49,15 +44,14 @@ confirm
 ```
 
 ```javascript
-			$('.btns-confirm').mdl({
-				type:'confirm',
-				fullscreen:false,
-				overlayClick:false,
-				content:"Êtes vous sûr de vouloir supprimer toutes vos données?"
-				
-			}, function(result){
-			  	alert("result:" + result);
-			});
+$('.btns-confirm').mdl({
+	type:'confirm',
+	fullscreen:false,
+	overlayClick:false,
+	content:"Êtes vous sûr de vouloir supprimer toutes vos données?"
+}, function(result){
+	alert("result:" + result);
+});
 ```
 
 
@@ -70,14 +64,13 @@ Prompt
 ```
 
 ```javascript
-			$('.btns-prompt').mdl({
-				type:'prompt',
-				overlayClick:false,
-				content:"what is the color of the white horse?"
-				
-			}, function(result){
-			  	alert("result:" + result);
-			});
+$('.btns-prompt').mdl({
+	type:'prompt',
+	overlayClick:false,
+	content:"what is the color of the white horse?"
+}, function(result){
+	alert("result:" + result);
+});
 
 ```
 
@@ -85,9 +78,9 @@ Prompt
 
 ##Open &  close manually
 ```javascript
-			mdl_open('#modal1');
+mdl_open('#modal1');
 			
-			setTimeout(function(){ 
-				mdl_close('#modal1');
-			}, 2400);		
+setTimeout(function(){ 
+	mdl_close('#modal1');
+}, 2400);		
 ```
