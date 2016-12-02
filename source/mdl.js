@@ -168,7 +168,7 @@
 				| ---------------------------
 				*/
 				if(type=="confirm"){
-					var btns = $('<ul class="mdl-buttons"><li><a href="#0" data-response="false">No</a></li><li><a href="#0" data-response="true">Yes</a></li></ul>');
+					var btns = $('<ul class="mdl-buttons"><li><a href="#0" data-response="false">Non</a></li><li><a href="#0" data-response="true">Oui</a></li></ul>');
 					$(btns).appendTo(cible+" .mdl-container");
 				}
 				
